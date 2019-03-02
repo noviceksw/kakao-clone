@@ -10,31 +10,62 @@
 <body>
   <header>
     <div class="header__top"></div>
-      <div class="header_column">
-        <i class="fa fa-fighter-jet"></i>
-        <i class="fas fa-wifi"></i>
-      </div>
-      <div class="header_column">
-        <span class="header__time">18:38</span>
-      </div>
-      <div class="header_column">
-        <i class="fas fa-moon"></i>
-        <i class="fab fa-bluetooth-b"></i>
-        <span class="header_-battery">66% <i class="fas fa-battery-three-quarters"></i></span>
-      </div>
+      <a href="profile.html">
+        <div class="header_column">
+          <i class="fa fa-fighter-jet"></i>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="header_column">
+          <span class="header__time">18:38</span>
+        </div>
+        <div class="header_column">
+          <i class="fas fa-moon"></i>
+          <i class="fab fa-bluetooth-b"></i>
+          <span class="header_-battery">66% <i class="fas fa-battery-three-quarters"></i></span>
+        </div>
+      </a>
     </div>
 
-    <div class="header__bottom"></div>
+    <div class="header__bottom">
       <div class="header__culumn">
+        <a href="index.html">
         <i class="fa fa-times fa-lg"></i>
+        </a>
       </div>
       <div class="header__culumn">
-
       </div>
       <div class="header__culumn">
         <i class="fa fa-user fa-lg"></i>
       </div>
     </div>
   </header>
+
+  <main class="profile">
+<!-- 머리 -->
+    <header class="profile__header">
+      <img src="images/avatar.jpg" alt="">
+      <h3 class="profile__header-title">Nicolas</h3>
+    </header>
+<!-- textholder -->
+    <input type="text" placeholder="itnicolasme@gmail.com">
+
+<!-- chatroom -->
+    <div class="profile_actions">
+      <div class="profile__action">
+        <span class="profile_action-circle">
+          <i class="fa fa-comment fa-2x"></i>
+        </span>
+        <span class="profile__action-title">My Chatroom</span>
+      </div>
+
+  <!-- edit -->
+      <div class="profile_action">
+        <span class="profile_action-circle">
+          <i class="fa fa-pencil-alt fa-2x"></i>
+        </span>
+        <span class="profile__action-title">Edit Profile</span>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
