@@ -1,0 +1,46 @@
+.tab-bar {
+  background-color: #f7f7f7;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between; /* 각 플렉스 항목간에 동일한 간격을 유지한다 */
+  border-top: 1px solid #c1c1c1;
+  padding: 10px 30px 5px 30px;
+}
+
+/*
+Flex container: display:flex를 설정한 부모 엘리먼트
+Flex items: Flex container 내의 자식 엘리먼트
+
+display: flex를 추가하자마자
+.tab-bar는 자동으로 flex container가 되고
+자식 엘리먼트인 (a태그  클래스="tab-bar__tab")는 flex items가 되는 것이다.
+*/
+
+.tab-bar .tab-bar__tab {
+  align-items: center;
+  flex-direction: column; /*flex items의 flex-direction: row(열)*/
+  text-decoration: none;
+  color:#B1AEB0;
+  transition: transform .1s linear;
+}
+
+.tab-bar .tab-bar__tab:hover {
+  transform: scale(1.1);
+}
+
+.tab-bar .tab-bar__tab i {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.tab-bar .tab-bar__title {
+  font-size: 14px;
+}
+
+.tab-bar .tab-bar__tab--selected {
+  color: #523737;
+}

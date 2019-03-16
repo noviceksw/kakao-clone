@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import 'reset.css';
+@import 'globals.css';
+@import 'header.css';
+@import 'navigation.css';
+@import 'search-bar.css';
+@import 'friends.css';
+@import 'chats.css';
+@import 'find.css';
+@import 'more.css';
+@import 'profile.css';
+@import 'chat.css';
+@import 'bigScreen.css';
+@import 'mobile.css';
+/* 2019.03. 07 추가 */
+* {
+    box-sizing: border-box;
+}
+
+/* border-box를 추가하는 이유
+이는 box-model과 관계가 있습니다. html요소는 box로 이루어져 있는데
+흔히 일반적으로 우리는 브라우저 상에서 box의 길이를 계산할때 직관적으로 박스의 끝과 끝을 떠올리지만
+너비로 생각하지 않습니다.
+예를들어
+<div class="a">
+    <div class="sub1"></div>
+    <div class="sub2"></div>
+</div>
+라고 생각하면 a클래스가 넓이 100%로 하면 sub1, 2는 각각 너비를 50%로 하면 될것 같지만, 표준 브라우저는
+텍스트, 이미지 렌더링시 border, padding값을 제외합니다. 이럴경우 div 박스가 밖으로 삐져나오는데요,
+box-sizing속성은 이럴때 쓰면 편합니다.
+*/
